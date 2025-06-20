@@ -1,0 +1,2 @@
+﻿namespace HospitalManagement.Application.FunctionalTests;
+
