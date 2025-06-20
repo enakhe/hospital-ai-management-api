@@ -19,6 +19,39 @@
         }
       }
     },
+    "/api/ai/diagnosis": {
+      "post": {
+        "tags": [
+          "Diagnosis"
+        ],
+        "operationId": "Diagnosis_Diagnose",
+        "requestBody": {
+          "x-name": "request",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DiagnosisRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/admin/branches": {
       "post": {
         "tags": [
@@ -309,6 +342,26 @@
   },
   "components": {
     "schemas": {
+      "DiagnosisRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "symptoms": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "gender": {
+            "type": "string"
+          },
+          "history": {
+            "type": "string"
+          }
+        }
+      },
       "CreateBranchDto": {
         "type": "object",
         "additionalProperties": false,

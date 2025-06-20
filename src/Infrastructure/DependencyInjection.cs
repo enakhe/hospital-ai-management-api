@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using HospitalManagement.Application.Common.Interfaces;
 using HospitalManagement.Application.Common.Interfaces.Administrator;
+using HospitalManagement.Application.Common.Services.AIIntegration;
 using HospitalManagement.Domain.Constants;
 using HospitalManagement.Domain.Entities.Data;
 using HospitalManagement.Infrastructure.Data;
@@ -88,6 +89,7 @@ public static class DependencyInjection
         builder.Services.AddTransient<IIdentityService, IdentityService>();
         builder.Services.AddTransient<IUserRepository, UserRepository>();
         builder.Services.AddTransient<IBranchRepository, BranchRepository>();
+        builder.Services.AddTransient<DiagnosisService>();
 
         builder.Services.AddAuthorization(options =>
             options.AddPolicy(Policies.CanPurge, policy => policy.RequireRole(Roles.Administrator)));

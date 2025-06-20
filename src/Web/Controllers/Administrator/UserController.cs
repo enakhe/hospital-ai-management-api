@@ -1,8 +1,8 @@
 ﻿using HospitalManagement.Application.Common.DTOs.Administrator;
 using HospitalManagement.Application.Common.Interfaces.Administrator;
-using HotelManagement.Application.Common.Security;
-using HotelManagement.Application.Users.Commands;
-using HotelManagement.Application.Users.Queries;
+using HospitalManagement.Application.Common.Security;
+using HospitalManagement.Application.Users.Commands;
+using HospitalManagement.Application.Users.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

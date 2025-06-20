@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 namespace HospitalManagement.Domain.Entities.AIIntegration;
 public class DiagnosisResponse
 {
-    public required string Symptoms { get; set; }
-    public int? Age { get; set; }
-    public required string Gender { get; set; }
-    public required string History { get; set; }
+    public required List<Prediction> Predictions { get; set; }
+    public required string Advice { get; set; }
+}
+
+public class Prediction
+{
+    public required string Condition { get; set; }
+    public double Confidence { get; set; }
 }

@@ -1,6 +1,6 @@
 ﻿using HospitalManagement.Application.Common.DTOs.Administrator;
 using HospitalManagement.Application.Common.Interfaces.Administrator;
-using HotelManagement.Application.Common.Interfaces;
+using HospitalManagement.Application.Common.Interfaces;
 
 namespace HospitalManagement.Application.Users.Commands;
 

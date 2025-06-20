@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using HospitalManagement.Application.Common.Interfaces;
 using HospitalManagement.Application.Common.Security;
-using HotelManagement.Application.Common.Exceptions;
+using HospitalManagement.Application.Common.Exceptions;
 
 namespace HospitalManagement.Application.Common.Behaviours;
 public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull

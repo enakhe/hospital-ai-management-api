@@ -1,11 +1,13 @@
-﻿using HospitalManagement.Application.Common.Services.AIIntegration;
+﻿using HospitalManagement.Application.Common.Security;
+using HospitalManagement.Application.Common.Services.AIIntegration;
 using HospitalManagement.Domain.Entities.AIIntegration;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HospitalManagement.Web.Controllers.AIIntegraton;
 
 [ApiController]
-[Route("api/ai/disnosis")]
+[Route("api/ai/diagnosis")]
+[Authorize(Roles = "Administrator")]
 public class DiagnosisController(DiagnosisService service) : ControllerBase
 {
     private readonly DiagnosisService _service = service;

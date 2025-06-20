@@ -1,7 +1,7 @@
 ﻿using HospitalManagement.Application.Common.DTOs.Administrator;
 using HospitalManagement.Application.Common.Interfaces.Administrator;
 using HospitalManagement.Domain.Entities.Data;
-using HotelManagement.Application.Common.Exceptions;
+using HospitalManagement.Application.Common.Exceptions;
 using Microsoft.AspNetCore.Identity;
 
 namespace HospitalManagement.Application.Common.Services.Administrator;

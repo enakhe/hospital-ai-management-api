@@ -3,7 +3,7 @@ using HospitalManagement.Application.Common.Interfaces;
 using HospitalManagement.Domain.Entities.Administrator;
 using HospitalManagement.Domain.Entities.Configuration;
 using HospitalManagement.Domain.Entities.Data;
-using HotelManagement.Infrastructure.Data.Configurations;
+using HospitalManagement.Infrastructure.Data.Configurations;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
